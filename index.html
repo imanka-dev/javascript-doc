@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Documentation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar on left side */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100%;
+      background: #f4f4f4;
+      border-right: 2px solid #ccc;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    #navbar header {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    #navbar a {
+      display: block;
+      padding: 8px 0;
+      text-decoration: none;
+      color: #333;
+    }
+
+    #navbar a:hover {
+      color: #0073e6;
+    }
+
+    /* Main content pushed right */
+    #main-doc {
+      margin-left: 240px;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section header {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    code {
+      display: block;
+      background: #eee;
+      padding: 6px;
+      margin: 6px 0;
+      border-radius: 4px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    /* Responsive: stack navbar on top */
+    @media (max-width: 768px) {
+      #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+      }
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <header>JavaScript Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#Objects">Objects</a>
+  </nav>
+
+  <!-- Main content -->
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile programming language used for web development.</p>
+      <p>It allows you to create dynamic and interactive experiences on websites.</p>
+      <code>console.log("Hello World!");</code>
+      <ul>
+        <li>Client-side scripting</li>
+        <li>Event handling</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are containers for storing data values.</p>
+      <p>You can declare variables using var, let, or const.</p>
+      <code>let name = "John";</code>
+      <ul>
+        <li>var - function scoped</li>
+        <li>let - block scoped</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are blocks of code designed to perform a task.</p>
+      <p>You can call functions to reuse code multiple times.</p>
+      <code>
+        function greet() {<br>
+        &nbsp;&nbsp;return "Hello";<br>
+        }
+      </code>
+      <ul>
+        <li>Function declaration</li>
+        <li>Function expression</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops are used to repeat a block of code as long as a condition is met.</p>
+      <p>Common loops in JavaScript are for, while, and do...while loops.</p>
+      <code>
+        for(let i=0; i&lt;5; i++) {<br>
+        &nbsp;&nbsp;console.log(i);<br>
+        }
+      </code>
+      <ul>
+        <li>For loop</li>
+        <li>While loop</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Objects">
+      <header>Objects</header>
+      <p>Objects are collections of key-value pairs.</p>
+      <p>They are fundamental to JavaScript and used to model real-world entities.</p>
+      <code>
+        let car = {<br>
+        &nbsp;&nbsp;brand: "Toyota",<br>
+        &nbsp;&nbsp;year: 2022<br>
+        };
+      </code>
+      <ul>
+        <li>Properties</li>
+        <li>Methods</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
